@@ -189,8 +189,8 @@
     margin: 10px;
     border: none;
     border-radius: 8px;
-    background: #222;
-    color: #fff;
+    background: white;
+    color: black;
   }
   
   textarea {

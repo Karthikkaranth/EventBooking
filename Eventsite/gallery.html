@@ -5,35 +5,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixel Event's - Gallery</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="galleryStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="logo"><h1>Pixel Event's</h1></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Booking</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <nav>
-        <div class="logo"><h1>Pixel Event's</h1></div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Booking</a></li>
-        </ul>
-    </nav>
-</header>
+    <section class="gallery-hero">
+        <div class="hero-content">
+            <h1>Our Gallery</h1>
+            <p>Capturing Moments, Creating Memories</p>
+        </div>
+    </section>
 
-<section class="company">
-    <h2>Gallery 📸</h2>
-    <div class="gallery-grid">
-        <img src="/image/event1.jpeg" alt="Event 1">
-        <img src="c:\BBHC2025\EVENTSITE\event2.jpeg" alt="Event 2">
-        <img src="c:\BBHC2025\EVENTSITE\event3jpeg.jpeg" alt="Event 3">
-    </div>
-</section>
+    <section class="gallery-container">
+        <div class="gallery-filter">
+            <button class="filter-btn active" data-filter="all">All Events</button>
+            <button class="filter-btn" data-filter="wedding">Weddings</button>
+            <button class="filter-btn" data-filter="birthday">Birthdays</button>
+            <button class="filter-btn" data-filter="corporate">Corporate</button>
+            <button class="filter-btn" data-filter="catering">Catering</button>
+        </div>
 
-<footer>
-    <p>© 2025 Pixel Event's. All rights reserved. ❤️</p>
-</footer>
-<script src="js/script.js"></script>
+        <div class="gallery-grid">
+            <!-- Wedding Events -->
+            <div class="gallery-item wedding">
+                <img src="images\download (2).jfif" alt="Wedding Event">
+                <div class="overlay">
+                    <h3>Wedding Celebration</h3>
+                    <p>Grand wedding ceremony with beautiful decorations</p>
+                </div>
+            </div>
 
+            <div class="gallery-item wedding">
+                <img src="images/7b18e512-98d0-44cf-8e44-529954cfd54c.jfif" alt="Wedding Event">
+                <div class="overlay">
+                    <h3>Wedding Reception</h3>
+                    <p>Elegant reception with stunning arrangements</p>
+                </div>
+            </div>
+
+            <!-- Birthday Events -->
+            <div class="gallery-item birthday">
+                <img src="images\images (2).jfif" alt="Birthday Party">
+                <div class="overlay">
+                    <h3>Birthday Party</h3>
+                    <p>Fun-filled birthday celebration</p>
+                </div>
+            </div>
+
+            <div class="gallery-item birthday">
+                <img src="images\eaea6529-eedb-4bd6-ae03-4271a939cfc7 (1).jfif" alt="Birthday Party">
+                <div class="overlay">
+                    <h3>Kids Birthday</h3>
+                    <p>Colorful kids birthday party</p>
+                </div>
+            </div>
+
+            <!-- Corporate Events -->
+            <div class="gallery-item corporate">
+                <img src="images\download (4).jfif" alt="Corporate Event">
+                <div class="overlay">
+                    <h3>Corporate Meeting</h3>
+                    <p>Professional corporate gathering</p>
+                </div>
+            </div>
+
+            <div class="gallery-item corporate">
+                <img src="images\images (3).jfif" alt="Corporate Event">
+                <div class="overlay">
+                    <h3>Business Conference</h3>
+                    <p>Modern conference setup</p>
+                </div>
+            </div>
+
+            <!-- Catering Events -->
+            <div class="gallery-item catering">
+                <img src="images\download (5).jfif" alt="Catering Service">
+                <div class="overlay">
+                    <h3>Gourmet Catering</h3>
+                    <p>Delicious food presentation</p>
+                </div>
+            </div>
+
+            <div class="gallery-item catering">
+                <img src="images/service.jfif" alt="Catering Service">
+                <div class="overlay">
+                    <h3>Buffet Setup</h3>
+                    <p>Elegant buffet arrangement</p>
+                </div>
+            </div>
+
+            <!-- Additional Events -->
+            <div class="gallery-item wedding">
+                <img src="images\download12.jfif" alt="Wedding Event">
+                <div class="overlay">
+                    <h3>Wedding Decor</h3>
+                    <p>Beautiful wedding decorations</p>
+                </div>
+            </div>
+
+            <div class="gallery-item birthday">
+                <img src="images\download (3).jfif" alt="Birthday Party">
+                <div class="overlay">
+                    <h3>Theme Party</h3>
+                    <p>Creative theme decoration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Pixel Event's</h3>
+                <p>Making your celebrations grand, vibrant, and unforgettable!</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Pixel Event's. All rights reserved. ❤️</p>
+        </div>
+    </footer>
+
+    <script src="galleryScript.js"></script>
 </body>
 </html>
